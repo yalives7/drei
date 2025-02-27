@@ -1,5 +1,5 @@
 NAME = minitalk
-CC = CC
+CC = cc
 FLAGS = -Wall -Wextra -Werror
 RM = rm -f 
 SERVER = server 
@@ -16,7 +16,7 @@ $(SERVER):
 	$(CC) $(FLAGS) $(SERVER_SRC) $(UTILS_SRC) -o $(SERVER)
 
 $(CLİENT):
-	$(CC) $(FLAGS) $(CLİENT_SRC) $(UTILS_SRC) -O $(CLİENT)
+	$(CC) $(FLAGS) $(CLİENT_SRC) $(UTILS_SRC) -o $(CLİENT)
 
 clean : 
 	$(RM) $(SERVER) $(CLİENT)
