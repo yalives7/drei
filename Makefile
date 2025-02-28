@@ -2,10 +2,10 @@ NAME = minitalk
 CC = cc
 FLAGS = -Wall -Wextra -Werror
 RM = rm -f 
-SERVER = server 
-SERVER_SRC= server.c 
-CLİENT = client
-CLİENT_SRC = client.c
+SERVER = server_bonus 
+SERVER_SRC= server_bonus.c 
+CLİENT = client_bonus
+CLİENT_SRC = client_bonus.c
 UTILS_SRC= utils.c  
 
 all :$(SERVER)$(CLİENT)
